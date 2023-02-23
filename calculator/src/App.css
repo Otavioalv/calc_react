@@ -1,0 +1,15 @@
+.calc{
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50cqmin;
+  height: 50cqmin;
+  transform: translate(-50%, -50%);
+}
+
+.calc_body{
+  display: flex;
+}
