@@ -1,9 +1,25 @@
-import style from './botao.module.css'
+import styles from './botao.module.css'
+import PropTypes from 'prop-types'
 
-function botao({val}){
+
+/* 
+    'val' e o valor do botão que vai aparecer
+    'color' e a cor do botão
+*/
+function botao({val, color}){
     return(
-        <button className={style.bot} >{val}</button>
+    <div className={styles.div}>
+        <button 
+            className={styles.bot}
+            style={{ backgroundColor: `${color}`}}
+        >{val}</button>
+    </div>
     )
+}
+
+botao.defaultProps = {
+    val: 'B',
+    color: '#f00'
 }
 
 export default botao
