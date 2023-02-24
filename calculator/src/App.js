@@ -4,14 +4,11 @@ import Tela from './components/tela/Tela';
 
 function App() {
   const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9,'.', 0, 'c'];
-  const operators = ['+', '-', 'X', '=']
-
- 
-
+  const operators = ['+', '-', 'X', '='] 
   return (
     <div className='calc'>
       <div>
-        <Tela></Tela>
+        <Tela/>
       </div>
       <div className='calc_body'>
         <div className='number_bottom'>
@@ -38,13 +35,12 @@ function App() {
           }
         </div>
 
-        <div className='equal_bottom'>
+        {/* <div className='equal_bottom'>
           <Botao
             val='='
             color='#4f3767'
           />
-        </div>
-        <input type='color' display='none'></input>
+        </div> */}
       </div>
     </div>
   );
